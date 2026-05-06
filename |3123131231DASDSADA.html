@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>¡Registro Confirmado! — Proyecto de 0 a 10K con Parce</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','987485380489627');
+fbq('track','PageView');
+fbq('track','CompleteRegistration');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=987485380489627&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#0A0A0A;color:#fff;font-family:'Inter',sans-serif;overflow-x:hidden;line-height:1.65;min-height:100vh}
+
+/* ── ORBS ── */
+.orb{position:fixed;filter:blur(80px);pointer-events:none;z-index:0;will-change:transform}
+.orb1{width:min(90vw,900px);height:min(50vw,500px);background:radial-gradient(ellipse,rgba(200,255,0,.35) 0%,transparent 70%);top:-10%;left:-15%;animation:blob1 12s ease-in-out infinite}
+.orb2{width:min(60vw,600px);height:min(70vw,700px);background:radial-gradient(ellipse,rgba(200,255,0,.38) 0%,transparent 70%);bottom:0;right:-15%;animation:blob2 15s ease-in-out infinite}
+@keyframes blob1{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(8%,6%) scale(1.08)}}
+@keyframes blob2{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-8%,-8%) scale(1.06)}}
+
+/* ── LAYOUT ── */
+.page{position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px 20px}
+
+/* ── INNER WRAPPER — ancho fijo como landing de Yamila ── */
+.inner{width:100%;max-width:560px;display:flex;flex-direction:column;align-items:center;gap:24px}
+
+/* ── PROGRESS ── */
+.progress-wrap{width:100%}
+.progress-label{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.progress-pct{font-size:13px;font-weight:900;color:#C8FF00;letter-spacing:1px;text-transform:uppercase}
+.progress-step{font-size:12px;font-weight:700;color:rgba(255,255,255,.5);letter-spacing:.5px;text-transform:uppercase}
+.progress-bar{height:8px;background:rgba(255,255,255,.08);border-radius:99px;overflow:hidden}
+.progress-fill{height:100%;width:0%;background:linear-gradient(90deg,#C8FF00,#7FFF00);border-radius:99px;transition:width 1.4s cubic-bezier(.4,0,.2,1);box-shadow:0 0 12px rgba(200,255,0,.45)}
+
+/* ── TIMER ── */
+.timer-wrap{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:rgba(255,59,59,.1);border:1.5px solid rgba(255,59,59,.35);border-radius:50px;padding:9px 22px}
+.timer-dot{width:8px;height:8px;background:#ff3b3b;border-radius:50%;animation:dot-blink 1.4s ease-in-out infinite;flex-shrink:0}
+@keyframes dot-blink{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(255,59,59,.7)}50%{opacity:.5;box-shadow:0 0 0 5px rgba(255,59,59,0)}}
+.timer-txt{font-size:14px;font-weight:800;color:rgba(255,255,255,.85);white-space:nowrap}
+.timer-txt strong{color:#ff6b6b;font-size:15px}
+
+/* ── BADGE ── */
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,255,0,.15);border:1.5px solid rgba(200,255,0,.4);color:#C8FF00;padding:7px 18px;border-radius:50px;font-size:12px;font-weight:800;letter-spacing:.8px;text-transform:uppercase}
+
+/* ── TITLES ── */
+.title{font-weight:900;font-size:clamp(28px,5vw,44px);line-height:1.08;letter-spacing:-.5px;text-align:center}
+.hl-g{background:linear-gradient(135deg,#C8FF00 0%,#7FFF00 40%,#AAFF00 70%,#C8FF00 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200% 100%;animation:shine 4s ease-in-out infinite}
+@keyframes shine{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.subtitle{font-size:15px;color:rgba(255,255,255,.75);line-height:1.7;font-weight:500;text-align:center}
+.subtitle strong{color:#C8FF00;font-weight:800}
+
+/* ── CTA BOX ── */
+.cta-box{width:100%;background:rgba(10,10,10,.98);border:2px solid rgba(200,255,0,.42);border-radius:20px;padding:28px 28px 24px;position:relative;overflow:hidden}
+.cta-box::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,transparent,#C8FF00 25%,#C8FF00 75%,transparent)}
+.cta-box-title{font-weight:900;font-size:17px;color:#fff;margin-bottom:6px}
+.cta-box-sub{font-size:13px;color:rgba(255,255,255,.62);margin-bottom:20px;line-height:1.6}
+.btn-wa{display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(270deg,#25D366,#128C4A,#1DA851,#25D366);background-size:300% 300%;animation:btn-wa 3s ease infinite;color:#fff;font-weight:900;font-size:15px;padding:16px 24px;border-radius:13px;border:none;cursor:pointer;text-decoration:none;box-shadow:0 4px 24px rgba(37,211,102,.32);transition:transform .25s,box-shadow .25s;width:100%;min-height:52px;-webkit-tap-highlight-color:transparent}
+.btn-wa:hover{transform:translateY(-3px);box-shadow:0 10px 32px rgba(37,211,102,.48)}
+@keyframes btn-wa{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+.btn-wa svg{width:22px;height:22px;flex-shrink:0}
+
+/* ── PILLS ── */
+.pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;width:100%}
+.pill{background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.13);padding:8px 14px;border-radius:10px;font-size:13px;color:rgba(255,255,255,.85);display:flex;align-items:center;gap:7px;font-weight:700}
+
+/* ── URGENCY ── */
+.urgency-note{font-size:12px;color:rgba(255,255,255,.4);line-height:1.6;text-align:center}
+</style>
+</head>
+<body>
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+
+<div class="page">
+  <div class="inner">
+
+    <!-- PROGRESS -->
+    <div class="progress-wrap">
+      <div class="progress-label">
+        <span class="progress-pct">80% completado</span>
+        <span class="progress-step">Falta 1 paso</span>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" id="pf"></div></div>
+    </div>
+
+    <!-- TIMER -->
+    <div class="timer-wrap">
+      <div class="timer-dot"></div>
+      <div class="timer-txt">El acceso al grupo cierra en: <strong id="timer">03:00:00</strong></div>
+    </div>
+
+    <!-- BADGE -->
+    <div class="badge">🎉 ¡Tu lugar está reservado!</div>
+
+    <!-- TÍTULO -->
+    <h1 class="title">¡Casi listo! Falta <span class="hl-g">1 paso</span> importante</h1>
+
+    <!-- SUBTÍTULO -->
+    <p class="subtitle">Tu registro está confirmado para el <strong>Proyecto de 0 a 10K</strong>.<br/>Para recibir el link de acceso y los recordatorios, completá este último paso ahora.</p>
+
+    <!-- CTA WHATSAPP -->
+    <div class="cta-box">
+      <div class="cta-box-title">📲 Unite al grupo de WhatsApp de las clases</div>
+      <div class="cta-box-sub">Ahí vas a recibir el link de cada clase, los recordatorios y material exclusivo de Parce antes de cada sesión.</div>
+      <a class="btn-wa" href="https://sndflw.com/i/pag-grupoparcefx" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.549 4.107 1.51 5.833L.057 23.215a.75.75 0 0 0 .93.903l5.4-1.516A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.686-.515-5.21-1.41l-.374-.223-3.865 1.085 1.032-3.7-.244-.39A9.956 9.956 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+        </svg>
+        Unirme al grupo ahora
+      </a>
+    </div>
+
+    <!-- PILLS FECHAS -->
+    <div class="pills">
+      <div class="pill">📅 17 de Mayo — Clase 1</div>
+      <div class="pill">📅 18 de Mayo — Clase 2</div>
+      <div class="pill">📅 19 de Mayo — Clase 3</div>
+      <div class="pill">🕖 7:00 PM Miami (ET)</div>
+    </div>
+
+    <p class="urgency-note">⚠️ El link de acceso al grupo cierra cuando se llenen los cupos.<br/>No esperes — unite ahora para no quedar afuera.</p>
+
+  </div>
+</div>
+
+<script>
+// Progress bar
+setTimeout(() => { document.getElementById('pf').style.width = '80%'; }, 300);
+
+// Timer persistente
+function startTimer(secs, el) {
+  let t = secs;
+  const iv = setInterval(() => {
+    const h = Math.floor(t / 3600);
+    const m = Math.floor((t % 3600) / 60);
+    const s = t % 60;
+    el.textContent = String(h).padStart(2,'0') + ':' + String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0');
+    if (--t < 0) { clearInterval(iv); el.textContent = '00:00:00'; }
+  }, 1000);
+}
+const KEY = 'parce_ty_timer';
+const now = Math.floor(Date.now() / 1000);
+const stored = localStorage.getItem(KEY);
+const expiry = stored ? parseInt(stored) : null;
+let remaining = (expiry && expiry > now) ? expiry - now : 3 * 3600;
+if (!expiry || expiry <= now) localStorage.setItem(KEY, now + remaining);
+startTimer(remaining, document.getElementById('timer'));
+</script>
+</body>
+</html>
